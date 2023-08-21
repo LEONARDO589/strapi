@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "formaciones",
+  "info": {
+    "singularName": "formacione",
+    "pluralName": "formaciones",
+    "displayName": "formacione",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo": {
+      "type": "string",
+      "required": true,
+      "maxLength": 150
+    },
+    "year": {
+      "type": "integer",
+      "required": true
+    },
+    "universidad": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "maxLength": 1200,
+      "minLength": 150
+    },
+    "tipo": {
+      "type": "enumeration",
+      "enum": [
+        "Formación",
+        "Experiencia"
+      ],
+      "required": true
+    }
+  }
+}

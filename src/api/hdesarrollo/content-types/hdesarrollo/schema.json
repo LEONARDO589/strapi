@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hdesarrollos",
+  "info": {
+    "singularName": "hdesarrollo",
+    "pluralName": "hdesarrollos",
+    "displayName": "habilidades",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "fecha": {
+      "type": "date"
+    },
+    "porcentaje": {
+      "type": "integer"
+    },
+    "letraPorcentaje": {
+      "type": "enumeration",
+      "enum": [
+        "diez",
+        "veinte",
+        "treinta",
+        "cuarenta",
+        "cincuenta",
+        "sesenta",
+        "setenta",
+        "ochenta",
+        "noventa",
+        "cient"
+      ]
+    },
+    "tipo": {
+      "type": "enumeration",
+      "enum": [
+        "Desarrollo",
+        "Normativas"
+      ]
+    }
+  }
+}
